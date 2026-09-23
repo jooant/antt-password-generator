@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class=container>
+            <div class="hero">
+                <h1>
+                    Generate a <span id="hightlight">random password</span>
+                </h1>
+                <p id="slogan">Never use an insecure password again.</p>
+            </div>
+            <div class="password-generator">
+                    <button id="btn-generate" onclick="generate()">Generate passwords</button>
+                <div class="toggle-password">
+                    <input type="checkbox" id="numbers" value="Numbers" onchange="updateCharacter()">
+                    <label for="numbers">Numbers</label><br>
+                </div>
+                <div class="toggle-password">
+                    <input type="checkbox" id="symbols" value="Symbols" onchange="updateCharacter()">
+                    <label for="symbols">Symbols</label><br>
+                </div>
+                <div id="passwords-wrapper">
+                    <p class = "passwords" id="password-1" onclick="clickOnCopy(this)"></p>
+                    <p class = "passwords" id="password-2" onclick="clickOnCopy(this)"></p>
+                </div>
+            </div>
+            <div class ="input-section">
+                <input type="text" id="text-field" placeholder="Test here">
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
