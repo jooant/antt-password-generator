@@ -1,19 +1,30 @@
-# Getting Started
-Install the dependencies and run the project
-```
-npm install
-npm start
-```
+# Random Password Generator
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+A simple web app that generates random passwords with customizable character sets.
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Fullstack Developer Path aims to teach you everything you need to become a Junior Developer, or you could go further with one of our advanced courses 🚀
+## Features
 
-- [Our courses](https://scrimba.com/courses)
-- [The Frontend Career Path](https://scrimba.com/fullstack-path-c0fullstack)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+- Generates 2 random 15-character passwords at once
+- Toggle **Numbers** and **Symbols** on/off via checkboxes (letters are always included)
+- Click any generated password to copy it to your clipboard
+- Visual "Copied!!!" feedback with a fade transition
 
-Happy Coding!
+## Tech Stack
+
+- HTML, CSS, JavaScript (vanilla, no framework/build tools)
+
+## Usage
+
+1. Open `index.html` in a browser
+2. (Optional) Check **Numbers** and/or **Symbols** to include them in the generated passwords
+3. Click **Generate passwords**
+4. Click on a password to copy it to your clipboard
+
+## Project Structure
+
+\`\`\`
+.
+├── index.html
+├── index.css
+└── index.js
+\`\`\`
