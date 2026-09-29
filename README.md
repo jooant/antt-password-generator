@@ -1,3 +1,5 @@
+<img width="556" height="551" alt="image" src="https://github.com/user-attachments/assets/dc761ebc-b204-4b92-ab28-1cbad6e8da8e" />
+
 # Random Password Generator
 
 A simple web app that generates random passwords with customizable character sets.
