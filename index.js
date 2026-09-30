@@ -22,22 +22,31 @@ function generate(){
 }
 
 function clickOnCopy(el){
-    navigator.clipboard.writeText(el.textContent);
-    const original = el.textContent
+    const original = el.textContent.trim()
+    if(original === ""){
+        let mess = "password hasn't been generated!!!"
+        fadeInOut(el, mess, original)
+        return;  
+    }
+    navigator.clipboard.writeText(original);
+    let mess = "Copied"
+    fadeInOut(el, mess, original)
+}
 
+function fadeInOut(el, message, text){
     el.style.opacity = 0
     setTimeout(() => {
-        el.textContent = "Copied!!!"
+        el.textContent = message;
         el.style.opacity = 1
-    }, 300);
+    }, 200);
 
     setTimeout(() => {
         el.style.opacity = 0
-        setTimeout (() => {
-            el.textContent = original
+        setTimeout(() => {
+            el.textContent = text
             el.style.opacity = 1
-        }, 300)
-    }, 1300)
+        }, 200)
+    }, 1200)
 }
 
 function updateCharacter(){
