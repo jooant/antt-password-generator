@@ -24,9 +24,8 @@ A simple web app that generates random passwords with customizable character set
 
 ## Project Structure
 
-\`\`\`
 .
 ├── index.html
 ├── index.css
 └── index.js
-\`\`\`
+
